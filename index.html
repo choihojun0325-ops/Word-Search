@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>7x7 Word Search</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>7x7 Word Search</h1>
+      <p>보드에서 단어를 드래그하여 찾으세요. 단어는 가로, 세로, 대각선, 역방향 모두 가능합니다.</p>
+    </header>
+
+    <main class="game-panel">
+      <section class="board-section">
+        <div id="board" class="board" aria-label="Word search board"></div>
+      </section>
+
+      <aside class="sidebar">
+        <div class="card">
+          <h2>진행</h2>
+          <p id="status">보드를 생성 중입니다...</p>
+          <button id="newBoard">새 보드 생성</button>
+        </div>
+
+        <div class="card">
+          <h2>추천 단어</h2>
+          <ul id="suggestions" class="word-list suggestions-list">
+            <li>드래그한 글자에 맞는 단어를 표시합니다.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>사용법</h2>
+          <p>1. 셀을 누르고 드래그하여 단어를 선택합니다.</p>
+          <p>2. 단어가 맞으면 추천 목록에서 취소선으로 표시됩니다.</p>
+          <p>3. 목표는 보드에서 찾을 수 있는 모든 단어를 찾는 것입니다.</p>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
